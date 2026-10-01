@@ -1,0 +1,42 @@
+schema_version: 3
+campaign:
+  name: "la-espero"
+  title: "La Espero"
+  description: "Himno de Esperanto"
+  instigator: "5521800"
+  repo_id: 1399902347
+  language: "en"
+  license: "CC-BY-4.0"
+automation:
+  central_repository: "lets-encode/lets-encode"
+  ref: "main"
+  path: "scripts/coordinator.ts"
+source:
+  kind: "facsimile"
+  images:
+    - "sources/img/01.jpg"
+    - "sources/img/02.jpg"
+  header:
+    title: "La Espero"
+    composer: "F. M. de Menil"
+    publisher: ""
+    date: ""
+  rights_acknowledged: "1"
+pieces:
+  - id: "piece-01"
+    kind: "facsimile"
+    preparation: "omr"
+    path: "sources/piece-01/score.mei"
+    zones:
+      - { surface: 1, ulx: 0, uly: 0, lrx: 2481, lry: 3508 }
+      - { surface: 2, ulx: 0, uly: 0, lrx: 2481, lry: 3508 }
+    header:
+      title: ""
+      composer: ""
+fragmentation:
+  strategy: "by-piece"
+validation:
+  required_validations: 1
+  pass_threshold: 1
+locking:
+  stale_after_minutes: 120
